@@ -6,7 +6,8 @@ brew outdated
 brew tap hashicorp/tap
 brew install hashicorp/tap/vault
 
-## vault command 
+## vault commands 
+### start server
 vault -v
 vault server -help 
 vault server -dev
