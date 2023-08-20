@@ -32,3 +32,9 @@
 - `vault kv list kv/`
 - `vault kv delete kv/my-secret`
 - `vault secrets disable kv/`
+
+### dynamic secrets - aws
+- `vault secrets enable -path=aws aws`
+- `vault write aws/roles/my-role credential_type=iam_user policy_document=<<Json file>>`
+- `vault read aws/creds/my-role`
+- `vault lease revoke aws/creds/my-role/0bce0782-32aa-25ec-f61d-c026ff22106`
